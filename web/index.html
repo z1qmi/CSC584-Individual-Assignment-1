@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Profile</h1>
+        <form action="ProfileServlet" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required>
+            </p>
+
+            <p>
+                <label for="programme">Programme:</label>
+                <input type="text" id="programme" name="programme"
+                       placeholder="Example: Bachelor of Computer Science" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies"
+                       placeholder="Example: Reading, gaming, badminton" required>
+            </p>
+
+            <p>
+                <label for="introduction">Short Self-Introduction:</label>
+                <textarea id="introduction" name="introduction"
+                          rows="5" cols="40" required></textarea>
+            </p>
+            <div class="actions">
+                <button type="submit">View My Profile</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

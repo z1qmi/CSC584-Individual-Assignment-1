@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 6, 2026, 4:38:29 PM
+    Author     : ziqmi
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #243247;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #2446a6;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #596579;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b9c3d1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #2446a6;
+    outline-offset: 2px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+button,
+.back-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2446a6;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.back-link:hover {
+    background: #19347f;
+}
+
+button[type="reset"] {
+    background: #e7ecf4;
+    color: #243247;
+}
+
+button[type="reset"]:hover {
+    background: #d5deeb;
+}
+
+.profile-details p {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e3e8ef;
+    overflow-wrap: anywhere;
+}
+
+.profile-details strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #2446a6;
+}
+
+.introduction {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .container {
+        padding: 24px 20px;
+    }
+}
+
